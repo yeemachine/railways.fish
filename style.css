@@ -129,26 +129,7 @@ a{
 
 }
 
-.animatedelay{
-  opacity: 0;
 
-  animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
-  animation-fill-mode: forwards;
-  animation-delay:.2s;
-}
-.animatehex{
-opacity: 0;
-animation: dash 2s cubic-bezier(0.670, 0.005, 0.200, 1.000);
-animation-fill-mode: forwards;
-}
-.animateheart{
-opacity: 0;
-animation: dash 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
-animation-fill-mode: forwards;
-width: auto;
-animation-delay:.5s;
-height: 20%;
-}
 
 .red{
   animation: blink 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
