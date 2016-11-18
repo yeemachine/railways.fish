@@ -166,9 +166,10 @@ stroke-dashoffset: 100;
   width: 50vw;
 }
 .button{
-  height:100px;
-  width:100px;
-  border-radius: 50%;
+  height:80px;
+  width:80px;
+  font-size: 13px;
+  border-radius: 100%;
   background-color: black;
   color:white;
   text-align: center;
@@ -176,30 +177,34 @@ stroke-dashoffset: 100;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 20px;
 }
 .reset{
-  height: 100px;
-    width:100px;
+  height: 80px;
+    width:80px;
     background-color: black;
     color:white;
-    border-radius: 50%;
+    font-size: 13px;
+    border-radius: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
+
 
 }
 .controls {
-  font-size: 2vw;
-  margin-top: 10px;
+  font-size: calc(13px + 1vw);
   border: 1px solid transparent;
   border-radius: 2px 0 0 2px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  height: 32px;
+  height: 52px;
+  width: 200px;
   outline: none;
+  padding-left: 20px;
+
 
 }
 
@@ -246,7 +251,9 @@ stroke-dashoffset: 100;
 }
 
 
-
+input{
+  text-transform:uppercase;
+}
 
 body{
   display: flex;
@@ -359,6 +366,14 @@ align-items: center;
   -ms-transform: rotate(0deg); /* IE 9 */
    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
    transform: rotate(0deg);
+}
+.containbuttons{
+
+  width: 100vw;
+}
+.containcontrols{
+
+  width: 100vw;
 }
 /*.tesla{
   stroke:#666
