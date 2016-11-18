@@ -293,7 +293,7 @@ svg{
 .directions{
   position: absolute;
   left:0;
-  opacity: .5;
+  opacity: 1;
   margin-top: 50px;
   color: black;
   width: 500px;
