@@ -18,8 +18,9 @@
       console.log(response.path.length);
       var svg = document.getElementById("svgObject");
       var svgDoc = svgObject.contentDocument;
+      var count = response.path.length
         $(svgDoc.getElementById(response.path[0])).css("stroke","red");
-         for (var i = 0; i < response.path.length; i++){
+         for (var i = 0; i < count; i++){
            $(svgDoc.getElementById(response.path[i])).css("stroke","red");
          }
     });
