@@ -77,8 +77,8 @@
 
 
           $( ".button" ).click(function() {
-            var inputLink1 = $("#OP").text();
-            var inputLink2 = $("#ED").text();
+            var inputLink1 = $("#OP").val();
+            var inputLink2 = $("#ED").val();
             console.log(inputLink1);
 
             $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
