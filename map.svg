@@ -414,44 +414,44 @@ M88.8-23.5l61.7,62.7c5.3,5.4,8.3,12.7,8.3,20.2v0"/>
 				436.4,371.8 436.4,348.2 431.2,348.2 			"/>
 		</g>
 		<g id="LABELS">
-			<text transform="matrix(1 0 0 1 434.5003 64.3332)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">Grand Central</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">42 St</tspan></text>
-			<text transform="matrix(1 0 0 1 196.4591 138.3163)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">34 St      </tspan><tspan x="-6.3" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Herald Sq</tspan></text>
-			<text transform="matrix(1 0 0 1 97.8097 72.8161)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">Times Sq</tspan><tspan x="20.3" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">42 St</tspan></text>
-			<text transform="matrix(1 0 0 1 118.1389 138.3162)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">34 St</tspan><tspan x="-19.1" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Penn Stn</tspan></text>
-			<text transform="matrix(1 0 0 1 28.1389 138.3158)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">34 St</tspan><tspan x="-19.1" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Penn Stn</tspan></text>
-			<text transform="matrix(1 0 0 1 28.139 280.6499)" font-family="'HelveticaNeue-Bold'" font-size="10px">14 St</text>
-			<text transform="matrix(1 0 0 1 174.6477 290.7433)" font-family="'HelveticaNeue-Bold'" font-size="10px">14 St</text>
-			<text transform="matrix(1 0 0 1 28.139 64.333)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">42 St</tspan><tspan x="3.7" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Port</tspan><tspan x="-19.6" y="24" font-family="'HelveticaNeue-Bold'" font-size="10px">Authority</tspan></text>
-			<text transform="matrix(1 0 0 1 273.6758 72.8162)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">42 St      </tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Bryant</tspan><tspan x="0" y="24" font-family="'HelveticaNeue-Bold'" font-size="10px">Park</tspan></text>
-			<text transform="matrix(1 0 0 1 273.6758 15.0238)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">47-50 Sts      </tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Rockefeller</tspan><tspan x="0" y="24" font-family="'HelveticaNeue-Bold'" font-size="10px">Center</tspan></text>
-			<text transform="matrix(1 0 0 1 273.6758 347.1649)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">W4</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Wash Sq</tspan></text>
-			<text transform="matrix(1 0 0 1 434.5006 257.3332)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="10px">14 St</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold'" font-size="10px">Union Sq</tspan></text>
-			<text transform="matrix(1 0 0 1 439.9003 361.7487)" font-family="'HelveticaNeue-Bold'" font-size="10px">Bway-Lafayette St</text>
-			<text transform="matrix(1 0 0 1 434.5006 138.3162)" font-family="'HelveticaNeue'" font-size="10px">33 St</text>
-			<text transform="matrix(1 0 0 1 434.5003 174.4828)" font-family="'HelveticaNeue'" font-size="10px">28 St</text>
-			<text transform="matrix(1 0 0 1 434.5009 210.3161)" font-family="'HelveticaNeue'" font-size="10px">23 St</text>
-			<text transform="matrix(1 0 0 1 434.5006 316.4409)" font-family="'HelveticaNeue'" font-size="10px">Astor Pl</text>
-			<text transform="matrix(1 0 0 1 434.5005 425.1905)" font-family="'HelveticaNeue'" font-size="10px">Spring St</text>
-			<text transform="matrix(1 0 0 1 316.4074 426.1906)" font-family="'HelveticaNeue'" font-size="10px">Prince St</text>
-			<text transform="matrix(1 0 0 1 342.6879 311.993)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10px">8 St</tspan><tspan x="-3" y="12" font-family="'HelveticaNeue'" font-size="10px">NYU</tspan></text>
-			<text transform="matrix(1 0 0 1 337.1277 190.993)" font-family="'HelveticaNeue'" font-size="10px">23 St</text>
-			<text transform="matrix(1 0 0 1 273.6761 290.7428)" font-family="'HelveticaNeue'" font-size="10px">14 St</text>
-			<text transform="matrix(1 0 0 1 241.5243 426.1902)" font-family="'HelveticaNeue'" font-size="10px">Spring St</text>
-			<text transform="matrix(1 0 0 1 271.6668 209.4189)" font-family="'HelveticaNeue'" font-size="10px">23 St</text>
-			<text transform="matrix(1 0 0 1 214.4156 270.9924)" font-family="'HelveticaNeue'" font-size="10px">6 Av</text>
-			<text transform="matrix(1 0 0 1 84.3751 270.9927)" font-family="'HelveticaNeue'" font-size="10px">8 Av</text>
-			<text transform="matrix(1 0 0 1 302.2535 156.0922)" font-family="'HelveticaNeue'" font-size="10px">28 St</text>
-			<text transform="matrix(1 0 0 1 209.2506 17.9689)" font-family="'HelveticaNeue'" font-size="10px">49 St</text>
-			<text transform="matrix(1 0 0 1 89.9001 20.4691)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10px">50 </tspan><tspan x="0" y="12" font-family="'HelveticaNeue'" font-size="10px">St</tspan></text>
-			<text transform="matrix(1 0 0 1 28.3752 20.4689)" font-family="'HelveticaNeue'" font-size="10px">50 St</text>
-			<text transform="matrix(1 0 0 1 28.375 210.4691)" font-family="'HelveticaNeue'" font-size="10px">23 St</text>
-			<text transform="matrix(1 0 0 1 77.2293 351.6912)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="10px">Christopher St</tspan><tspan x="9.8" y="12" font-family="'HelveticaNeue'" font-size="10px">Sheridan Sq</tspan></text>
-			<text transform="matrix(1 0 0 1 91.67 388.4158)" font-family="'HelveticaNeue'" font-size="10px">Houston St</text>
-			<text transform="matrix(1 0 0 1 116.846 210.4689)" font-family="'HelveticaNeue'" font-size="10px">23 St</text>
-			<text transform="matrix(1 0 0 1 116.8458 172.0231)" font-family="'HelveticaNeue'" font-size="10px">28 St</text>
-			<text transform="matrix(1 0 0 1 116.8461 245.0672)" font-family="'HelveticaNeue'" font-size="10px">18 St</text>
-			<text transform="matrix(1 0 0 1 324.2838 42.592)" font-family="'HelveticaNeue'" font-size="10px">5 Av</text>
-			<text transform="matrix(1 0 0 1 439.8996 350.4409)" font-family="'HelveticaNeue'" font-size="10px">Bleecker St</text>
+			<text transform="matrix(1 0 0 1 434.5003 64.3332)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Grand Central</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">42 St</tspan></text>
+			<text transform="matrix(1 0 0 1 196.4591 138.3163)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">34 St      </tspan><tspan x="-6.3" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Herald Sq</tspan></text>
+			<text transform="matrix(1 0 0 1 97.8097 72.8161)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Times Sq</tspan><tspan x="20.3" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">42 St</tspan></text>
+			<text transform="matrix(1 0 0 1 118.1389 138.3162)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">34 St</tspan><tspan x="-19.1" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Penn Stn</tspan></text>
+			<text transform="matrix(1 0 0 1 28.1389 138.3158)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">34 St</tspan><tspan x="-19.1" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Penn Stn</tspan></text>
+			<text transform="matrix(1 0 0 1 28.139 280.6499)" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">14 St</text>
+			<text transform="matrix(1 0 0 1 174.6477 290.7433)" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">14 St</text>
+			<text transform="matrix(1 0 0 1 28.139 64.333)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">42 St</tspan><tspan x="3.7" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Port</tspan><tspan x="-19.6" y="24" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Authority</tspan></text>
+			<text transform="matrix(1 0 0 1 273.6758 72.8162)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">42 St      </tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Bryant</tspan><tspan x="0" y="24" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Park</tspan></text>
+			<text transform="matrix(1 0 0 1 273.6758 15.0238)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">47-50 Sts      </tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Rockefeller</tspan><tspan x="0" y="24" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Center</tspan></text>
+			<text transform="matrix(1 0 0 1 273.6758 347.1649)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">W4</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Wash Sq</tspan></text>
+			<text transform="matrix(1 0 0 1 434.5006 257.3332)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">14 St</tspan><tspan x="0" y="12" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Union Sq</tspan></text>
+			<text transform="matrix(1 0 0 1 439.9003 361.7487)" font-family="'HelveticaNeue-Bold','sans-serif-Bold'" font-size="10px">Bway-Lafayette St</text>
+			<text transform="matrix(1 0 0 1 434.5006 138.3162)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">33 St</text>
+			<text transform="matrix(1 0 0 1 434.5003 174.4828)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">28 St</text>
+			<text transform="matrix(1 0 0 1 434.5009 210.3161)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">23 St</text>
+			<text transform="matrix(1 0 0 1 434.5006 316.4409)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Astor Pl</text>
+			<text transform="matrix(1 0 0 1 434.5005 425.1905)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Spring St</text>
+			<text transform="matrix(1 0 0 1 316.4074 426.1906)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Prince St</text>
+			<text transform="matrix(1 0 0 1 342.6879 311.993)"><tspan x="0" y="0" font-family="'HelveticaNeue','sans-serif'" font-size="10px">8 St</tspan><tspan x="-3" y="12" font-family="'HelveticaNeue','sans-serif'" font-size="10px">NYU</tspan></text>
+			<text transform="matrix(1 0 0 1 337.1277 190.993)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">23 St</text>
+			<text transform="matrix(1 0 0 1 273.6761 290.7428)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">14 St</text>
+			<text transform="matrix(1 0 0 1 241.5243 426.1902)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Spring St</text>
+			<text transform="matrix(1 0 0 1 271.6668 209.4189)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">23 St</text>
+			<text transform="matrix(1 0 0 1 214.4156 270.9924)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">6 Av</text>
+			<text transform="matrix(1 0 0 1 84.3751 270.9927)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">8 Av</text>
+			<text transform="matrix(1 0 0 1 302.2535 156.0922)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">28 St</text>
+			<text transform="matrix(1 0 0 1 209.2506 17.9689)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">49 St</text>
+			<text transform="matrix(1 0 0 1 89.9001 20.4691)"><tspan x="0" y="0" font-family="'HelveticaNeue','sans-serif'" font-size="10px">50 </tspan><tspan x="0" y="12" font-family="'HelveticaNeue','sans-serif'" font-size="10px">St</tspan></text>
+			<text transform="matrix(1 0 0 1 28.3752 20.4689)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">50 St</text>
+			<text transform="matrix(1 0 0 1 28.375 210.4691)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">23 St</text>
+			<text transform="matrix(1 0 0 1 77.2293 351.6912)"><tspan x="0" y="0" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Christopher St</tspan><tspan x="9.8" y="12" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Sheridan Sq</tspan></text>
+			<text transform="matrix(1 0 0 1 91.67 388.4158)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Houston St</text>
+			<text transform="matrix(1 0 0 1 116.846 210.4689)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">23 St</text>
+			<text transform="matrix(1 0 0 1 116.8458 172.0231)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">28 St</text>
+			<text transform="matrix(1 0 0 1 116.8461 245.0672)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">18 St</text>
+			<text transform="matrix(1 0 0 1 324.2838 42.592)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">5 Av</text>
+			<text transform="matrix(1 0 0 1 439.8996 350.4409)" font-family="'HelveticaNeue','sans-serif'" font-size="10px">Bleecker St</text>
 			<g id="Accessibility">
 				<path d="M445.1,87.6l-1,0.4l-1.4-3.1l-0.1-0.3l-0.3,0l-3,0l0-0.6h2.5v-1h-2.6L439,81c0.4-0.2,0.6-0.5,0.6-1
 					c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1c0,0.4,0.2,0.7,0.5,0.9l0.2,4.4l0,0.5l0.5,0l3.2,0l1.5,3.3l0.2,0.5l0.5-0.2
