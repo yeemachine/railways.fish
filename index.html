@@ -49,6 +49,8 @@
 </head>
 
 <body style="background-color:white">
+  <!-- <div class="splash">  <object class="animate2" id="svgObject2" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
+  </div> -->
   <container class="containcontrols">
 
   <!-- <input id="source" class="controls" type="text"
@@ -137,13 +139,11 @@
                  id = id.substring(0, id.length-1);
 
                  toClear.push(id);
-                 toWarn.push(id);
                  $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
                  // downtown animation
                } else {
 
                  toClear.push(id);
-                 toWarn.push(id);
 
                //console.log(id);
                 $(svgDoc.getElementById(id)).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");

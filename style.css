@@ -179,6 +179,11 @@ stroke-dashoffset: 100;
   justify-content: center;
   margin: 20px;
 }
+.button:hover{
+  cursor: pointer;
+  opacity:.5;
+
+}
 .traffic{
   height:80px;
   width:80px;
@@ -192,6 +197,11 @@ stroke-dashoffset: 100;
   align-items: center;
   justify-content: center;
   margin: 20px;
+}
+.traffic:hover{
+  cursor: pointer;
+  opacity:.5;
+
 }
 .clear{
   height:80px;
@@ -207,6 +217,11 @@ stroke-dashoffset: 100;
   justify-content: center;
   margin: 20px;
 }
+.clear:hover{
+  cursor: pointer;
+  opacity:.5;
+
+}
 .reset{
   height: 80px;
     width:80px;
@@ -221,6 +236,10 @@ stroke-dashoffset: 100;
     margin: 20px;
 
 
+}
+.reset:hover{
+  cursor: pointer;
+  opacity:.5;
 }
 .controls {
   font-size: calc(13px + 1vw);
@@ -327,21 +346,7 @@ svg{
   width: 500px;
   height: 300px;
 }
-nav{
-  position: absolute;
-  top:72vh;
-  left:50vw;
-  width: 40vh;
-  font-size: 4vh;
-  margin-left: 0vw;
-  color:white;
-  position: absolute;
-  transition: .5s;
-  z-index: 999;
-  -ms-transform: rotate(-30deg); /* IE 9 */
-   -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
-   transform: rotate(-30deg);
-}
+
 .animate {
 opacity: 1;
 /*animation: dash2 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);*/
@@ -350,16 +355,18 @@ width: auto;
 height: 100vh;
 }
 .animate2 {
-opacity: 1;
-/*animation: dash 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);*/
+opacity: 0;
+animation: dash2 3s cubic-bezier(0.670, 0.005, 0.200, 1.000);
 animation-fill-mode: forwards;
 }
-
-/*.group:hover *{
-  stroke:red;
-}*/
-a{
-
+.splash{
+  display: hidden;
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: white;
 }
 
 
@@ -382,24 +389,8 @@ a{
 
 body{
   background-color: black;
-  overflow: scroll;
 }
-nav{
-  position: relative;
-  top:80vh;
-  left:0;
-  width: 100vw;
-align-items: center;
- text-align: center;
-  margin-left: 0vw;
-  color:white;
-  position: absolute;
-  transition: .5s;
-  z-index: 999;
-  -ms-transform: rotate(0deg); /* IE 9 */
-   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-   transform: rotate(0deg);
-}
+
 .containbuttons{
 
   width: 100vw;
