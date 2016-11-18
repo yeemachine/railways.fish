@@ -75,12 +75,12 @@
         async defer></script> -->
         <script>
 
-        var inputLink1 = $("#OP").val();
-        var inputLink2 = $("#ED").val();
-        console.log(inputLink2);
-          $( ".button" ).click(function() {
 
+          $( ".button" ).click(function() {
+            var inputLink1 = $("#OP").val();
+            var inputLink2 = $("#ED").val();
             console.log(inputLink1);
+            console.log(inputLink2);
 
             $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
               console.log(response.path);
