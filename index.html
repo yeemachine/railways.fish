@@ -20,10 +20,12 @@
       var svgDoc = svgObject.contentDocument;
       var count = response.path.length;
       console.log(count);
+       if(response.path[0] !== null){
         // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
          for (var i = 0; i < count; i++){
            $(svgDoc.getElementById(response.path[i])).css("stroke","red");
          }
+       }
     });
 
 
