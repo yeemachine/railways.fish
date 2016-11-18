@@ -13,20 +13,7 @@
     <script src="jquery.min.js"></script>
     <script>
 
-    $.getJSON("https://railfish-backend.herokuapp.com/route?src=8TH420&dst=8TH140").done(function(response){
-      console.log(response.path);
-      console.log(response.path.length);
-      var svg = document.getElementById("svgObject");
-      var svgDoc = svgObject.contentDocument;
-      var count = response.path.length;
-      console.log(count);
-       if(response.path[0] !== null){
-        // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
-         for (var i = 0; i < count; i++){
-           $(svgDoc.getElementById(response.path[i])).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
-         }
-       }
-    });
+
 
 
     function initMap() {
@@ -77,4 +64,20 @@
 </body>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script>
+        <script>
+        $.getJSON("https://railfish-backend.herokuapp.com/route?src=8TH420&dst=8TH140").done(function(response){
+          console.log(response.path);
+          console.log(response.path.length);
+          var svg = document.getElementById("svgObject");
+          var svgDoc = svgObject.contentDocument;
+          var count = response.path.length;
+          console.log(count);
+           if(response.path[0] !== null){
+            // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
+             for (var i = 0; i < count; i++){
+               $(svgDoc.getElementById(response.path[i])).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+             }
+           }
+        });
+        </script>
 </html>
