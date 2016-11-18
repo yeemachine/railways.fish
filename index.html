@@ -140,6 +140,9 @@
 
            $( ".reset" ).click(function() {
              $(".directions").html("");
+
+             var svg = document.getElementById("svgObject");
+             var svgDoc = svgObject.contentDocument;
             //  var inputLink1 = $("#OP").val();
             //  var inputLink2 = $("#ED").val();
              //
@@ -164,7 +167,7 @@
               $(svgDoc.getElementById(toClear[i])).css("animation","");
             }
 
-
+});
             });
         </script>
 </html>
