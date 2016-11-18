@@ -104,6 +104,7 @@
                $(".directions").append("<li>"+response.instructions[i]+"</li>");
              }
              for (var i = 0; i < count; i++){
+
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
                  id = id.substring(0, id.length-1);
@@ -117,7 +118,15 @@
            });
            $( ".reset" ).click(function() {
 
+             var inputLink1 = $("#OP").val();
+             var inputLink2 = $("#ED").val();
 
+
+             $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+
+               var svg = document.getElementById("svgObject");
+               var svgDoc = svgObject.contentDocument;
+               var count = response.path.length;
               for (var i = 0; i < count; i++){
                 var id = response.path[i];
                 if(id.charAt(id.length-1)==='_'){
