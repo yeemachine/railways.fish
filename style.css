@@ -354,6 +354,7 @@ a{
 
 body{
   background-color: black;
+  overflow: scroll;
 }
 nav{
   position: relative;
