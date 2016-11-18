@@ -49,8 +49,8 @@
 </head>
 
 <body style="background-color:white">
-  <!-- <div class="splash">  <object class="animate2" id="svgObject2" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
-  </div> -->
+  <div class="splash">  <object class="animate2" id="svgObject2" type="image/svg+xml" data="logo.svg">Your browser does not support SVGs</object>
+  </div>
   <container class="containcontrols">
 
   <!-- <input id="source" class="controls" type="text"
@@ -90,6 +90,7 @@
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script> -->
         <script>
+        setTimeout(function(){ $(".splash").css("display","none");}, 700);
         var toClear = [];
         $( ".clear" ).click(function() {
           $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
