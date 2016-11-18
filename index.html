@@ -125,12 +125,15 @@
              for (var i = 0; i < count; i++){
 
                var id = response.path[i];
-               toClear.push(id);
                if(id.charAt(id.length-1)==='_'){
                  id = id.substring(0, id.length-1);
+
+                 toClear.push(id);
                  $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
                  // downtown animation
                } else {
+
+                 toClear.push(id);
                //console.log(id);
                 $(svgDoc.getElementById(id)).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
               }
@@ -138,7 +141,7 @@
            });
          });
 
-           $( ".reset" ).click(function() {
+           $( ".reset" ).click(function(){
              $(".directions").html("");
 
              var svg = document.getElementById("svgObject");
@@ -166,8 +169,7 @@
             for(var i = 0 ; i < toClear.length; i++){
               $(svgDoc.getElementById(toClear[i])).css("animation","");
             }
-
-});
+          });
 
         </script>
 </html>
