@@ -74,19 +74,18 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script>
         <script>
+        var inputLink1 = $("#OP").text();
+        var inputLink2 = $("#ED").text();
 
+        $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+          console.log(response.path);
+          console.log(response.path.length);
+          var svg = document.getElementById("svgObject");
+          var svgDoc = svgObject.contentDocument;
+          var count = response.path.length;
+          var last = response.path[0]
+          console.log(count);
           $( ".button" ).click(function() {
-
-            $.getJSON("https://railfish-backend.herokuapp.com/route?src=FLUGRAND0&dst=FLUTIMES0").done(function(response){
-              console.log(response.path);
-              console.log(response.path.length);
-              var svg = document.getElementById("svgObject");
-              var svgDoc = svgObject.contentDocument;
-              var count = response.path.length;
-              var last = response.path[0]
-              console.log(count);
-
-
              for (var i = 0; i < count; i++){
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
@@ -100,15 +99,6 @@
              }
            });
            $( ".reset" ).click(function() {
-
-             $.getJSON("https://railfish-backend.herokuapp.com/route?src=FLUGRAND0&dst=FLUTIMES0").done(function(response){
-               console.log(response.path);
-               console.log(response.path.length);
-               var svg = document.getElementById("svgObject");
-               var svgDoc = svgObject.contentDocument;
-               var count = response.path.length;
-               var last = response.path[0]
-               console.log(count);
               for (var i = 0; i < count; i++){
                 var id = response.path[i];
                 if(id.charAt(id.length-1)==='_'){
