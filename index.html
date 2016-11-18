@@ -52,9 +52,9 @@
       <input id="dest" class="controls" type="text"
           placeholder="Destination"> -->
           <input id="OP" class="controls" type="text"
-              placeholder="Starting Point">
+              placeholder="FLUGRAND0">
               <input id="ED" class="controls" type="text"
-                  placeholder="Destination">
+                  placeholder="FLUTIMES0">
           <div class="button" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Click</div>
           <div class="reset" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Reset</div>
 
@@ -74,18 +74,23 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script>
         <script>
-        var inputLink1 = $("#OP").text();
-        var inputLink2 = $("#ED").text();
 
-        $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
-          console.log(response.path);
-          console.log(response.path.length);
-          var svg = document.getElementById("svgObject");
-          var svgDoc = svgObject.contentDocument;
-          var count = response.path.length;
-          var last = response.path[0]
-          console.log(count);
+
           $( ".button" ).click(function() {
+            var inputLink1 = $("#OP").text();
+            var inputLink2 = $("#ED").text();
+            console.log(inputlink1);
+
+            $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+              console.log(response.path);
+              console.log(response.path.length);
+              var svg = document.getElementById("svgObject");
+              var svgDoc = svgObject.contentDocument;
+              var count = response.path.length;
+              var last = response.path[0]
+              console.log(count);
+
+
              for (var i = 0; i < count; i++){
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
