@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>The Yee Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script>
+
+    $.getJSON("http://railfish-backend.herokuapp.com/route?src=COOPER&dst=PENN"), function(response){
+      console.log(response);
+    }
+
+
+    function initMap() {
+
+  var source = /** @type {!HTMLInputElement} */(
+      document.getElementById('source'));
+  var destination = /** @type {!HTMLInputElement} */(
+          document.getElementById('dest'));
+
+
+
+  var autocomplete = new google.maps.places.Autocomplete(source);
+  var autocomplete1 = new google.maps.places.Autocomplete(destination);
+
+
+
+  autocomplete.addListener('place_changed', function() {
+    marker.setVisible(false);
+    var place = autocomplete.getPlace();
+    if (!place.geometry) {
+      window.alert("No details available for input: '" + place.name + "'");
+      return;
+    }
+
+  });
+}
+
+  </script>
+</head>
+
+<body style="background-color:white">
+  <container>
+
+  <input id="source" class="controls" type="text"
+      placeholder="Starting Point">
+      <input id="dest" class="controls" type="text"
+          placeholder="Destination">
+        </container>
+
+  <div class="directions">Best Route</div>
+  <object class="animate" id="svgObject" type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
+  <nav></nav>
+
+
+
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
+        async defer></script>
+</html>
