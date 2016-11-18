@@ -52,6 +52,7 @@
       <input id="dest" class="controls" type="text"
           placeholder="Destination">
           <div class="button" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Click</div>
+          <div class="reset" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Reset</div>
 
 
   <div class="directions">Best Route</div>
@@ -90,6 +91,19 @@
               }
              }
            });
+           $( ".reset" ).click(function() {
+              for (var i = 0; i < count; i++){
+                var id = response.path[i];
+                if(id.charAt(id.length-1)==='_'){
+                  id = id.substring(0, id.length-1);
+                  $(svgDoc.getElementById(id)).css("animation","");
+                  // downtown animation
+                } else {
+                //console.log(id);
+                 $(svgDoc.getElementById(id)).css("animation","");
+               }
+              }
+            });
 
 
         });
