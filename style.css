@@ -348,6 +348,9 @@ a{
     width: 100vw;
   height: auto;
 }
+.directions{
+  top:100vw;
+}
 body{
   background-color: black;
 }
