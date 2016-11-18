@@ -51,7 +51,7 @@
       placeholder="Starting Point">
       <input id="dest" class="controls" type="text"
           placeholder="Destination">
-          <div style="background-color:black; color:white;width:10vw;" ontoggle="submitData()">Click</div>
+          <div class="button" style="background-color:black; color:white;width:10vw;" onclick="submitData()">Click</div>
         </container>
 
 
@@ -75,11 +75,24 @@
           var svgDoc = svgObject.contentDocument;
           var count = response.path.length;
           console.log(count);
-            submitData = function() {            // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
+          $( ".button" ).click(function() {
              for (var i = 0; i < count; i++){
                $(svgDoc.getElementById(response.path[i])).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+               $( ".button" ).addClass("hide");
+               $( ".button" ).removeClass("button")
+
              }
-           }
+           });
+
+           $( ".hide" ).click(function() {
+              for (var i = 0; i < count; i++){
+                $(svgDoc.getElementById(response.path[i])).css("animation","");
+                $( ".hide" ).addClass("button");
+                $( ".hide" ).removeClass("hide")
+
+              }
+            });
+
 
         });
         </script>
