@@ -59,7 +59,11 @@
           <div class="reset" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Reset</div>
 
 
-  <div class="directions">Best Route</div>
+  <div >
+    Best Route
+  <ol class="directions">
+  </ol>
+</div>
 </container>
 
 
@@ -93,7 +97,9 @@
               console.log(count);
               console.log(counti);
              console.log(response.instructions[3]);
+             for (var i = 0; i < counti; i++){
 
+             }
              for (var i = 0; i < count; i++){
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
