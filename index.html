@@ -13,9 +13,14 @@
     <script src="jquery.min.js"></script>
     <script>
 
-    $.getJSON("https://railfish-backend.herokuapp.com/route?src=COOPER&dst=PENN"), function(response){
-      console.log(response);
-    }
+    $.getJSON("https://railfish-backend.herokuapp.com/route?src=COOPER&dst=PENN").done(function(response){
+      console.log(response.path[7]);
+      var svg = document.getElementById("svgObject");
+      var svgDoc = svgObject.contentDocument;
+      var line1 = svgDoc.getElementById("CAN8-CAN6-L");
+        $(svgDoc.getElementById("CAN8-CAN6-L")).css("stroke","gainsboro");
+
+    });
 
 
     function initMap() {
