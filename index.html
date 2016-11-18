@@ -86,7 +86,7 @@
               var last = response.path[0]
               console.log(count);
 
-              
+
              for (var i = 0; i < count; i++){
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
@@ -100,6 +100,15 @@
              }
            });
            $( ".reset" ).click(function() {
+
+             $.getJSON("https://railfish-backend.herokuapp.com/route?src=FLUGRAND0&dst=FLUTIMES0").done(function(response){
+               console.log(response.path);
+               console.log(response.path.length);
+               var svg = document.getElementById("svgObject");
+               var svgDoc = svgObject.contentDocument;
+               var count = response.path.length;
+               var last = response.path[0]
+               console.log(count);
               for (var i = 0; i < count; i++){
                 var id = response.path[i];
                 if(id.charAt(id.length-1)==='_'){
