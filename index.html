@@ -98,7 +98,7 @@
               console.log(counti);
              console.log(response.instructions[3]);
              for (var i = 0; i < counti; i++){
-
+               $(".directions").append("<li>"+response.instructions[i]+"</li>");
              }
              for (var i = 0; i < count; i++){
                var id = response.path[i];
