@@ -87,6 +87,7 @@
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script> -->
         <script>
+        var toClear = [];
           $( ".traffic" ).click(function() {
             $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14R-BWY23R&time=2000").done(function(){
             });
@@ -124,6 +125,7 @@
              for (var i = 0; i < count; i++){
 
                var id = response.path[i];
+               toClear.push(id);
                if(id.charAt(id.length-1)==='_'){
                  id = id.substring(0, id.length-1);
                  $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
@@ -136,26 +138,29 @@
            });
            $( ".reset" ).click(function() {
              $(".directions").html("");
-             var inputLink1 = $("#OP").val();
-             var inputLink2 = $("#ED").val();
-
-
-             $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
-
-               var svg = document.getElementById("svgObject");
-               var svgDoc = svgObject.contentDocument;
-               var count = response.path.length;
-              for (var i = 0; i < count; i++){
-                var id = response.path[i];
-                if(id.charAt(id.length-1)==='_'){
-                  id = id.substring(0, id.length-1);
-                  $(svgDoc.getElementById(id)).css("animation","");
-                  // downtown animation
-                } else {
-                //console.log(id);
-                 $(svgDoc.getElementById(id)).css("animation","");
-               }
-              }
+            //  var inputLink1 = $("#OP").val();
+            //  var inputLink2 = $("#ED").val();
+             //
+             //
+            //  $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+             //
+            //    var svg = document.getElementById("svgObject");
+            //    var svgDoc = svgObject.contentDocument;
+            //    var count = response.path.length;
+            //   for (var i = 0; i < count; i++){
+            //     var id = response.path[i];
+            //     if(id.charAt(id.length-1)==='_'){
+            //       id = id.substring(0, id.length-1);
+            //       $(svgDoc.getElementById(id)).css("animation","");
+            //       // downtown animation
+            //     } else {
+            //     //console.log(id);
+            //      $(svgDoc.getElementById(id)).css("animation","");
+            //    }
+            //  }
+            for(var i = 0 ; i < toClear.length; i++){
+              $(svgDoc.getElementById(toClear[i])).css("animation","");
+            }
             });
 
 });
