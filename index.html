@@ -13,11 +13,12 @@
     <script src="jquery.min.js"></script>
     <script>
 
-    $.getJSON("https://railfish-backend.herokuapp.com/route?src=COOPER&dst=PENN").done(function(response){
-      console.log(response.path[7]);
+    $.getJSON("https://railfish-backend.herokuapp.com/route?src=8TH420&dst=8TH140").done(function(response){
+      console.log(response.path[3]);
+      console.log(response.path.length);
       var svg = document.getElementById("svgObject");
       var svgDoc = svgObject.contentDocument;
-        $(svgDoc.getElementById("CAN8-CAN6-L")).css("stroke","gainsboro");
+        $(svgDoc.getElementById(response.path[3])).css("stroke","gainsboro");
 
     });
 
