@@ -348,9 +348,10 @@ a{
     width: 100vw;
   height: auto;
 }
-.directions{
-  top:125vh;
+.containdirections{
+  top:150vh;
 }
+
 body{
   background-color: black;
 }
