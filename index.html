@@ -51,9 +51,12 @@
       placeholder="Starting Point">
       <input id="dest" class="controls" type="text"
           placeholder="Destination">
+          <div style="background-color:black" onclick="submitData()">Click</div>
         </container>
 
+
   <div class="directions">Best Route</div>
+
   <object class="animate" id="svgObject" type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
   <nav></nav>
 
@@ -72,12 +75,12 @@
           var svgDoc = svgObject.contentDocument;
           var count = response.path.length;
           console.log(count);
-           if(response.path[0] !== null){
-            // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
+            submitData = function() {            // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
              for (var i = 0; i < count; i++){
                $(svgDoc.getElementById(response.path[i])).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
              }
            }
+         
         });
         </script>
 </html>
