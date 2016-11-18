@@ -61,6 +61,7 @@
 
           <div class="button" ><p>Route</p></div>
           <div class="reset" ><p>Reset</p></div>
+          <div class="traffic" ><p>Traffic</p></div>
         </container>
 
 
@@ -82,7 +83,36 @@
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script> -->
         <script>
+          $( ".traffic" ).click(function() {
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=LEX286-LEX236&time=20".done(function(response){
+              console.log(response.path);
+              console.log(response.path.length);
+              var svg = document.getElementById("svgObject");
+              var svgDoc = svgObject.contentDocument;
+              var count = response.path.length;
+              var counti = response.instructions.length;
+              var last = response.path[0];
+              console.log(count);
+              console.log(counti);
+             console.log(response.instructions[3]);
+             for (var i = 0; i < counti; i++){
+               $(".directions").append("<li>"+response.instructions[i]+"</li>");
+             }
+             for (var i = 0; i < count; i++){
 
+               var id = response.path[i];
+               if(id.charAt(id.length-1)==='_'){
+                 id = id.substring(0, id.length-1);
+                 $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+                 // downtown animation
+               } else {
+               //console.log(id);
+                $(svgDoc.getElementById(id)).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              }
+             }
+           });
+
+          });
 
           $( ".button" ).click(function() {
             var inputLink1 = $("#OP").val();
