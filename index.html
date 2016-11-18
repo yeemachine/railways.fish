@@ -88,9 +88,10 @@
               var svg = document.getElementById("svgObject");
               var svgDoc = svgObject.contentDocument;
               var count = response.path.length;
-              var last = response.path[0]
+              var counti = response.instructions.length;
+              var last = response.path[0];
               console.log(count);
-
+              console.log(counti);
              console.log(response.instructions[3]);
 
              for (var i = 0; i < count; i++){
