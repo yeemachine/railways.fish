@@ -343,9 +343,9 @@ a{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .animate{
-    width: 95vw;
+    width: 100vw;
   height: auto;
 }
 body{
