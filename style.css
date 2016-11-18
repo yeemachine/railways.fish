@@ -263,6 +263,11 @@ svg{
   animation-fill-mode: forwards;
 
 }
+.containdirections{
+  position: fixed;
+  left:0;
+  top:25vh;
+}
 .directions{
   position: absolute;
   left:0;
