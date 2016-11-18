@@ -84,32 +84,15 @@
         async defer></script> -->
         <script>
           $( ".traffic" ).click(function() {
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=LEX286-LEX236&time=20").done(function(response){
-              console.log(response.path);
-              console.log(response.path.length);
-              var svg = document.getElementById("svgObject");
-              var svgDoc = svgObject.contentDocument;
-              var count = response.path.length;
-              var counti = response.instructions.length;
-              var last = response.path[0];
-              console.log(count);
-              console.log(counti);
-             console.log(response.instructions[3]);
-             for (var i = 0; i < counti; i++){
-               $(".directions").append("<li>"+response.instructions[i]+"</li>");
-             }
-             for (var i = 0; i < count; i++){
-
-               var id = response.path[i];
-               if(id.charAt(id.length-1)==='_'){
-                 id = id.substring(0, id.length-1);
-                 $(svgDoc.getElementById(id)).css("animation","");
-                 // downtown animation
-               } else {
-               //console.log(id);
-                $(svgDoc.getElementById(id)).css("animation","");
-              }
-             }
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14R-BWY23R&time=2000").done(function(){
+            });
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14W-BWY23W&time=2000").done(function(){
+            });
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14N-BWY23N&time=2000").done(function(){
+            });
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14Q-BWY23Q&time=2000").done(function(){
+            });
+            alert("Transmitted mock timepoint data to backend.");
            });
 
 });
