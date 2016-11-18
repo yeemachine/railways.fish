@@ -91,7 +91,9 @@
               var last = response.path[0]
               console.log(count);
 
-
+              $("directions").html(response.instructions);
+             console.log(response.instructions[0])
+             
              for (var i = 0; i < count; i++){
                var id = response.path[i];
                if(id.charAt(id.length-1)==='_'){
@@ -105,7 +107,7 @@
              }
            });
            $( ".reset" ).click(function() {
-             $("directions").html(response.instructions);
+
 
               for (var i = 0; i < count; i++){
                 var id = response.path[i];
