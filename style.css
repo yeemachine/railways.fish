@@ -149,9 +149,11 @@ width: auto;
 animation-delay:.5s;
 height: 20%;
 }
-.background{
-  animation: fadeblack 5s cubic-bezier(0.670, 0.005, 0.200, 1.000);
+
+.red{
+  animation: blink 1s cubic-bezier(0.670, 0.005, 0.200, 1.000);
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 @keyframes fadeblack{
   0% {
@@ -247,6 +249,19 @@ stroke-dashoffset: 60;
   }
 100% {
 opacity: 1;
+stroke-dasharray: 10;
+stroke-dashoffset: 100;
+}
+
+@keyframes blink {
+  0% {
+  opacity: 0;
+  fill:red
+  }
+100% {
+opacity: 1;
+fill:black
+
 stroke-dasharray: 10;
 stroke-dashoffset: 100;
 }

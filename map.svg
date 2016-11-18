@@ -241,7 +241,7 @@
 				<circle id="8TH14C" cx="69.8" cy="277.1" r="3.5"/>
 				<circle id="8TH14E" cx="78.8" cy="277.1" r="3.5"/>
 				<circle id="8TH23C" cx="69.8" cy="206" r="3.5"/>
-				<circle id="8TH23E" cx="78.8" cy="206" r="3.5"/>
+				<circle class="red" id="8TH23E" cx="78.8" cy="206" r="3.5"/>
 				<circle id="8TH34A" cx="60.7" cy="134.8" r="3.5"/>
 				<circle id="8TH34C" cx="69.8" cy="134.8" r="3.5"/>
 				<circle id="8TH34E" cx="78.8" cy="134.8" r="3.5"/>
