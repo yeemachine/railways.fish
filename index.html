@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+
     <!-- <script>
 
 
@@ -84,18 +86,18 @@
         async defer></script> -->
         <script>
           $( ".traffic" ).click(function() {
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14R-BWY23R&time=2000").done(function(){
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14R-BWY23R&time=2000").done(function(){
             });
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14W-BWY23W&time=2000").done(function(){
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14W-BWY23W&time=2000").done(function(){
             });
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14N-BWY23N&time=2000").done(function(){
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14N-BWY23N&time=2000").done(function(){
             });
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add?segment=BWY14Q-BWY23Q&time=2000").done(function(){
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14Q-BWY23Q&time=2000").done(function(){
             });
             alert("Transmitted mock timepoint data to backend.");
            });
 
-          
+
 
           $( ".button" ).click(function() {
             var inputLink1 = $("#OP").val();
