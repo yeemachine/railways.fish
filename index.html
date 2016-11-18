@@ -14,11 +14,11 @@
     <script>
 
     $.getJSON("https://railfish-backend.herokuapp.com/route?src=8TH420&dst=8TH140").done(function(response){
-      console.log(response.path[0]);
+      console.log(response.path);
       console.log(response.path.length);
       var svg = document.getElementById("svgObject");
       var svgDoc = svgObject.contentDocument;
-      var count = response.path.length;
+      var count = response.path.length-1;
       console.log(count);
         // $(svgDoc.getElementById(response.path[0])).css("stroke","red");
          for (var i = 0; i < count; i++){
