@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script>
-
+$( document ).ready(function() {
     $.getJSON("https://railfish-backend.herokuapp.com/route?src=8TH420&dst=8TH140").done(function(response){
       console.log(response.path[0]);
       console.log(response.path.length);
@@ -51,7 +51,7 @@
 
   });
 }
-
+});
   </script>
 </head>
 
