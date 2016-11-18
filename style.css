@@ -149,8 +149,36 @@ stroke-dashoffset: 100;
   color:white;
 }
 
+.containcontrols{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top:0;
+  left:0;
+  width: 50vw;
+}
+.containbuttons{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom:10px;
+  left:0;
+  width: 50vw;
+}
+.button{
+  height:50px;
+  width:50px;
+  background-color: black;
+  color:white;
+  text-align: center;
 
+}
+.reset{
+  height: 50px;
+    width:50px;
+}
 .controls {
+  font-size: 2vw;
   margin-top: 10px;
   border: 1px solid transparent;
   border-radius: 2px 0 0 2px;

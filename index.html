@@ -45,7 +45,7 @@
 </head>
 
 <body style="background-color:white">
-  <container>
+  <container class="containcontrols">
 
   <!-- <input id="source" class="controls" type="text"
       placeholder="Starting Point">
@@ -55,8 +55,12 @@
               placeholder="Start">
               <input id="ED" class="controls" type="text"
                   placeholder="Destination">
-          <div class="button" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Route</div>
-          <div class="reset" style="background-color:black; color:white;width:10vw;margin-left:20px;text-align:center">Reset</div>
+
+                </container>
+                <container class="containbuttons">
+          <div class="button" >Route</div>
+          <div class="reset" >Reset</div>
+        </container>
 
 
   <div >
@@ -65,7 +69,6 @@ Directions
 
   </ol>
 </div>
-</container>
 
 
   <object class="animate" id="svgObject" type="image/svg+xml" data="map.svg">Your browser does not support SVGs</object>
