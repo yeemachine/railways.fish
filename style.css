@@ -407,7 +407,7 @@ height: 70vh;
   .animate{
     position: fixed;
     width: 100vw;
-    top:52px;
+    top:0;
   height: auto;
 }
 .containdirections{
