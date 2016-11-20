@@ -303,6 +303,8 @@ stroke-dashoffset: 100;
 
 input{
   text-transform:uppercase;
+  font-family: helvetica, sans-serif;
+  font-weight: 300;
 }
 
 body{
