@@ -90,7 +90,7 @@
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD3o_vzkcWmw4-yDtuFZ0F4lioqWn8eU8&libraries=places&callback=initMap"
         async defer></script> -->
         <script>
-        setTimeout(function(){ $(".splash").css("display","none");}, 700);
+        setTimeout(function(){ $(".splash").css("display","none");}, 1000);
         $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
         });
         var toClear = [];
