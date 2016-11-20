@@ -380,7 +380,7 @@ height: 70vh;
   height: auto;
 }
 .containdirections{
-  top:100vh;
+  margin-top:100vh;
 }
 
 body{
