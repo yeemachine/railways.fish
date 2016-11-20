@@ -223,7 +223,7 @@ stroke-dashoffset: 100;
 
 }
 
-.reset{
+.clear{
   height: 80px;
     width:80px;
     background-color: green;
@@ -238,7 +238,7 @@ stroke-dashoffset: 100;
 
 
 }
-.reset:hover{
+.clear:hover{
   cursor: pointer;
   opacity:.5;
 }

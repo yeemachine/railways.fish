@@ -67,7 +67,7 @@
 
           <div class="button" ><p>Route</p></div>
           <div class="traffic" ><p>Traffic</p></div>
-          <div class="reset" ><p>Reset</p></div>
+          <div class="clear" ><p>Clear</p></div>
           <!-- <div class="clear" ><p>Clear</p></div> -->
         </container>
 
@@ -233,7 +233,7 @@
            });
          });
 
-           $( ".reset" ).click(function(){
+           $( ".clear" ).click(function(){
              $(".directions").html("");
              $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
              });
