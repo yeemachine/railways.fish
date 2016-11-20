@@ -91,6 +91,8 @@
         async defer></script> -->
         <script>
         setTimeout(function(){ $(".splash").css("display","none");}, 700);
+        $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
+        });
         var toClear = [];
           // $( ".clear" ).click(function() {
           //   $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
