@@ -114,8 +114,11 @@
 
 
           $( ".button" ).click(function() {
-            var inputLink1 = $("#OP").val();
-            var inputLink2 = $("#ED").val();
+            var in1 = $("#OP").val();
+            var in2 = $("#ED").val();
+            var inputLink1 = in1.toUpperCase();
+            var inputLink2 = in2.toUpperCase();
+
             console.log(inputLink1);
             console.log(inputLink2);
 
