@@ -383,7 +383,7 @@ height: 70vh;
   height: auto;
 }
 .containdirections{
-  margin-top:100vw;
+  margin-top:calc(100vw+52px);
 
 }
 .directions{
