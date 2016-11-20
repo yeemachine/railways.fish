@@ -334,6 +334,7 @@ svg{
   color: black;
   width: 500px;
   height: 300px;
+  margin: 0;
 }
 
 .animate {
@@ -382,9 +383,12 @@ height: 70vh;
   height: auto;
 }
 .containdirections{
-  margin-top:100vw;
-}
+  margin-top:90vw;
 
+}
+.directions{
+  width: 100vw;
+}
 body{
   background-color: black;
   overflow-x: hidden;
