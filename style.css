@@ -299,7 +299,15 @@ stroke-dashoffset: 100;
   font-size: 13px;
   font-weight: 300;
 }
+.text{
+  font-family:'HeveticaNeue','Arial-Bold',sans-serif;
+  font-size: 10px;
+}
+.boldtext{
+  font-family:'HelveticaNeue-Bold','Arial-Bold', sans-serif;
+  font-size: 10px;
 
+}
 
 input{
   text-transform:uppercase;
