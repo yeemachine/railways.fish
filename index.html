@@ -164,6 +164,7 @@
               console.log(count);
               console.log(counti);
              console.log(response.instructions[3]);
+             $(".directions").append("<li><h1>Traffic Detected on Broadway<h1></li>");
              for (var i = 0; i < counti; i++){
                $(".directions").append("<li>"+response.instructions[i]+"</li>");
              }
