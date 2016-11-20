@@ -68,7 +68,7 @@
           <div class="button" ><p>Route</p></div>
           <div class="reset" ><p>Reset</p></div>
           <div class="traffic" ><p>Traffic</p></div>
-          <div class="clear" ><p>Clear</p></div>
+          <!-- <div class="clear" ><p>Clear</p></div> -->
         </container>
 
 
@@ -92,12 +92,12 @@
         <script>
         setTimeout(function(){ $(".splash").css("display","none");}, 700);
         var toClear = [];
-          $( ".clear" ).click(function() {
-            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
-            });
-
-            alert("Mock traffic cleared.");
-           });
+          // $( ".clear" ).click(function() {
+          //   $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
+          //   });
+          //
+          //   alert("Mock traffic cleared.");
+          //  });
 
           $( ".traffic" ).click(function() {
             var in1 = $("#OP").val();
@@ -114,14 +114,10 @@
               var svg = document.getElementById("svgObject");
               var svgDoc = svgObject.contentDocument;
               var count = response.path.length;
-              var counti = response.instructions.length;
               var last = response.path[0];
               console.log(count);
-              console.log(counti);
-             console.log(response.instructions[3]);
-             for (var i = 0; i < counti; i++){
-               $(".directions").append("<li>"+response.instructions[i]+"</li>");
-             }
+
+
              for (var i = 0; i < count; i++){
 
                var id = response.path[i];
@@ -238,7 +234,8 @@
 
            $( ".reset" ).click(function(){
              $(".directions").html("");
-
+             $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
+             });
              var svg = document.getElementById("svgObject");
              var svgDoc = svgObject.contentDocument;
 
