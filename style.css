@@ -438,7 +438,7 @@ body{
 
 }
 .containcontrols{
-
+  z-index: 9995
   width: 100vw;
 }
 /*.tesla{
