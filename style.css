@@ -407,7 +407,7 @@ height: 70vh;
   .animate{
     position: fixed;
     width: 100vw;
-    top:0;
+    top:52px;
     left:0;
   height: auto;
 }
