@@ -403,6 +403,11 @@ body{
 .containbuttons{
 
   width: 100vw;
+  left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
 .containcontrols{
