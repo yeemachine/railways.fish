@@ -203,12 +203,15 @@ stroke-dashoffset: 100;
   opacity:.5;
 
 }
+.route{
+  background-color: green
+}
 .traffic{
   height:80px;
   width:80px;
   font-size: 13px;
   border-radius: 100%;
-  background-color: red;
+  background-color: yellow;
   color:white;
   text-align: center;
   display: flex;
@@ -226,7 +229,7 @@ stroke-dashoffset: 100;
 .clear{
   height: 80px;
     width:80px;
-    background-color: green;
+    background-color: red;
     color:white;
     font-size: 13px;
     border-radius: 100%;
