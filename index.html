@@ -92,14 +92,54 @@
         <script>
         setTimeout(function(){ $(".splash").css("display","none");}, 700);
         var toClear = [];
-        $( ".clear" ).click(function() {
-          $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
-          });
+          $( ".clear" ).click(function() {
+            $.getJSON("https://railfish-backend.herokuapp.com/delay?action=clear").done(function(){
+            });
 
-          alert("Mock traffic cleared.");
-         });
+            alert("Mock traffic cleared.");
+           });
 
           $( ".traffic" ).click(function() {
+            var in1 = $("#OP").val();
+            var in2 = $("#ED").val();
+            var inputLink1 = in1.toUpperCase();
+            var inputLink2 = in2.toUpperCase();
+
+            console.log(inputLink1);
+            console.log(inputLink2);
+
+            $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+              console.log(response.path);
+              console.log(response.path.length);
+              var svg = document.getElementById("svgObject");
+              var svgDoc = svgObject.contentDocument;
+              var count = response.path.length;
+              var counti = response.instructions.length;
+              var last = response.path[0];
+              console.log(count);
+              console.log(counti);
+             console.log(response.instructions[3]);
+             for (var i = 0; i < counti; i++){
+               $(".directions").append("<li>"+response.instructions[i]+"</li>");
+             }
+             for (var i = 0; i < count; i++){
+
+               var id = response.path[i];
+               if(id.charAt(id.length-1)==='_'){
+                 id = id.substring(0, id.length-1);
+
+                 toClear.push(id);
+                 $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+                 // downtown animation
+               } else {
+
+                 toClear.push(id);
+
+               //console.log(id);
+                $(svgDoc.getElementById(id)).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              }
+             }
+           });
             $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14R-BWY23R&time=2000").done(function(){
             });
             $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14W-BWY23W&time=2000").done(function(){
@@ -161,26 +201,7 @@
 
              var svg = document.getElementById("svgObject");
              var svgDoc = svgObject.contentDocument;
-            //  var inputLink1 = $("#OP").val();
-            //  var inputLink2 = $("#ED").val();
-             //
-             //
-            //  $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
-             //
-            //    var svg = document.getElementById("svgObject");
-            //    var svgDoc = svgObject.contentDocument;
-            //    var count = response.path.length;
-            //   for (var i = 0; i < count; i++){
-            //     var id = response.path[i];
-            //     if(id.charAt(id.length-1)==='_'){
-            //       id = id.substring(0, id.length-1);
-            //       $(svgDoc.getElementById(id)).css("animation","");
-            //       // downtown animation
-            //     } else {
-            //     //console.log(id);
-            //      $(svgDoc.getElementById(id)).css("animation","");
-            //    }
-            //  }
+
             for(var i = 0 ; i < toClear.length; i++){
               $(svgDoc.getElementById(toClear[i])).css("animation","");
             }
