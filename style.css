@@ -297,6 +297,7 @@ body{
   transition: 20s;
   border:0;
   margin: 0;
+
 }
 select{
   background-color: transparent;
@@ -384,6 +385,8 @@ height: 70vh;
 
 body{
   background-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .containbuttons{
