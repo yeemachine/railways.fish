@@ -412,11 +412,12 @@ height: 70vh;
 }
 .containdirections{
   margin-top:100vw;
-  width: 100vw;
 
 
 }
 .directions{
+  width: 90vw;
+
 }
 body{
   background-color: black;
