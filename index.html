@@ -149,6 +149,46 @@
             $.getJSON("https://railfish-backend.herokuapp.com/delay?action=add&segment=BWY14Q-BWY34Q&time=2000").done(function(){
             });
             alert("Transmitted mock timepoint data to backend.");
+            var in1 = $("#OP").val();
+            var in2 = $("#ED").val();
+            var inputLink1 = in1.toUpperCase();
+            var inputLink2 = in2.toUpperCase();
+
+            console.log(inputLink1);
+            console.log(inputLink2);
+
+            $.getJSON("https://railfish-backend.herokuapp.com/route?src="+inputLink1+"&dst="+inputLink2).done(function(response){
+              console.log(response.path);
+              console.log(response.path.length);
+              var svg = document.getElementById("svgObject");
+              var svgDoc = svgObject.contentDocument;
+              var count = response.path.length;
+              var counti = response.instructions.length;
+              var last = response.path[0];
+              console.log(count);
+              console.log(counti);
+             console.log(response.instructions[3]);
+             for (var i = 0; i < counti; i++){
+               $(".directions").append("<li>"+response.instructions[i]+"</li>");
+             }
+             for (var i = 0; i < count; i++){
+
+               var id = response.path[i];
+               if(id.charAt(id.length-1)==='_'){
+                 id = id.substring(0, id.length-1);
+
+                 toClear.push(id);
+                 $(svgDoc.getElementById(id)).css("animation","dashsouth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+                 // downtown animation
+               } else {
+
+                 toClear.push(id);
+
+               //console.log(id);
+                $(svgDoc.getElementById(id)).css("animation","dashnorth 5s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5)");
+              }
+             }
+           });
            });
 
 
